@@ -42,6 +42,20 @@
     #bannerTitle {
         font-size: 20px;
     }
+    .footerLinksCon>ul {
+        /* background-color: magenta; */
+        list-style-type: none;
+        font-size: 12px;
+    }
+    .footerLinksCon>ul>li>a {
+        color: #fff;
+    }
+    .footerImage {
+        width: 100px;
+    }
+    .footerImage>figcaption {
+        font-size: 11px;
+    }
 }
 
 @media only screen and (max-width: 502px) {
@@ -53,5 +67,14 @@
     }
     .cards {
         width: 80%;
+    }
+    .footerLinksCon>ul {
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 356px) {
+    .footerLinksCon>ul {
+        font-size: 9px;
     }
 }
