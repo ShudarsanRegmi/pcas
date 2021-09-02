@@ -18,3 +18,16 @@ descriptionLangchanger.addEventListener("click", event => {
     }
     langCounter++;
 })
+
+// Making teh contact cards clickable
+let contactListCons = document.getElementsByClassName("contactListCon");
+Array.from(contactListCons).forEach(item => {
+    item.addEventListener("click", event => {
+        console.log(item.children[2].href)
+        url = item.children[2].href;
+        // var windowSize = "width=" + window.innerWidth + ",height=" + window.innerHeight + ",scrollbars=no";
+        // window.open(url, "_self");
+        // window.location.href = url;
+        // alert(url)
+    })
+})

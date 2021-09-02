@@ -155,6 +155,7 @@ nav>ul>li>a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 0px;
 }
 
 #services>h1 {
@@ -221,4 +222,72 @@ nav>ul>li>a {
 
 .cardsDesc::-webkit-scrollbar {
     width: 0;
+}
+
+
+/* Contact us */
+
+#contact {
+    width: 100vw;
+    max-width: 100%;
+    background-color: #00d5ab;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactsCon {
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contactsCon>ul {
+    display: grid;
+    width: 100%;
+    /* background-color: palegreen; */
+    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(271px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    padding: 10px;
+}
+
+.contactListCon {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    background-color: #f9f8fcd6;
+    color: #384140;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 12px black;
+}
+
+.contactListCon:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 6px 6px grey;
+    transform: scale(1.011)
+}
+
+.contactListCon>i {
+    font-size: 35px;
+    margin: 5px;
+}
+
+.contactListCon>span {
+    font-weight: bolder;
+    margin: 5px;
+}
+
+.contactListCon>a {
+    text-decoration: none;
+    color: #384140;
 }
