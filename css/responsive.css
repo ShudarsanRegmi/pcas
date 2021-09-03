@@ -59,14 +59,31 @@
 }
 
 @media only screen and (max-width: 502px) {
+    #headerBrandName {
+        font-size: 17px;
+    }
+    .small-logo {
+        width: 30px;
+        height: auto;
+    }
+    .menuOpener {
+        font-size: 20px;
+        right: 10px;
+    }
     nav>ul {
         width: 100%;
+    }
+    #bannerTitle {
+        font-size: 16px;
     }
     #bannerCon {
         max-width: 100%;
     }
     .cards {
-        width: 80%;
+        width: 85%;
+    }
+    #services>h1 {
+        font-size: 25px;
     }
     .footerLinksCon>ul {
         margin: 5px;
@@ -74,6 +91,39 @@
 }
 
 @media only screen and (max-width: 356px) {
+    #headerBrandName {
+        font-size: 13px;
+    }
+    #bannerTitle {
+        font-size: 11px;
+    }
+    .cards {
+        width: 95%;
+    }
+    #services>h1 {
+        font-size: 20px;
+    }
+    .contactsCon>ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .contactListCon>i {
+        font-size: 25px;
+    }
+    .contactListCon>span {
+        font-size: 13px;
+    }
+    .contactListCon>a {
+        font-size: 11px;
+    }
+    .footerImageCon>img {
+        width: 50px;
+    }
+    .footerLinksCon {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .footerLinksCon>ul {
         font-size: 9px;
     }
